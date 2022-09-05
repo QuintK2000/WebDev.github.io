@@ -1,0 +1,153 @@
+/*ye property saare tags ya pore page pr lag jaye  */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.hero{
+    /*  links ko saath pe laana h to positioning amesha realtive krna ki ek doosre pe depend krta rhe  is tag mai cheez equidistant rahegi*/
+    position: relative;
+    /* ye cheeze pura box width occupy krle to */
+    width: 100%;
+    height: 100vh;
+    /* background-color:#0d1122; */
+    background-color:#fef7ee;
+}
+
+nav{
+    /* display block se centre mai ja rha tha */
+    /* flex mtlb flexibally ek fixed length select karo element ke liae */
+    display: flex;
+    width: auto;
+    margin: auto;
+    align-items: center;
+    /* justify content se is tag ke andr ke content ke beech mai justified spaces ho */
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    
+}
+
+nav ul{
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+nav ul li{
+    /* is line ke andr block */
+    display:inline-block ;
+    list-style: none;
+    /* margin goes top right bottom left */
+    margin: 10px 50px;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover{
+    color:deeppink;
+}
+
+.para{
+    margin-left: 7%;
+    margin-top: 190px;
+    margin-bottom: 10%;
+}
+
+.para h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: black;
+    /* -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px; */
+}
+
+.para p{
+    color: black;
+    /*  */
+    line-height: 29px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.para a button{
+    margin-top: 15px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: gainsboro;
+    color: black;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 8px 0px black;
+    transition: all 0.2 ease;
+}
+
+.para a button:hover{
+    background-color: whitesmoke;
+    /* box-shadow: no */
+    top: 8px;
+    /* bottom: 8px; */
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    /* itna right mai chorke right bd jao */
+    right: 100px;
+}
+
+/* translate x repositions horizontally raltively mtlb uske saath baaki cheeze bhi apne aap set ho jaengi*/
+
+
+
+.images img {
+    height: 60%;
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+    
+    /* transition: bottom 1s; */
+    /* -o-transition-duration: 1ms; */
+
+    /* transition-duration: 1s; */
+}
+
+.images img:hover{
+    /* it is not same as spacing to give 100px on left and move out.............it moves towwards left 100pc */
+    transform: translateY(-37%);
+    transition: 1s;
+    /* top:50px; */
+}
+
+.social {
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.social a {
+    font-size: 30px;
+    color: black;
+    margin-right: 20px;
+}
+
+.social a:hover {
+    color: orange;
+}
+
