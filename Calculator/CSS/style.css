@@ -1,0 +1,65 @@
+.container{
+    max-height: 400px;
+    /* vh- viewport height ....10vh 10% of the visible screen*/
+    /* top right bottom left */
+    margin: 15vh 400px 0 400px; 
+    border: 6px solid black;
+    padding-bottom: 67px;
+    /* box-shadow: 10px,10px,10px,10px rgb(205, 205, 102,1); */
+
+    
+
+}
+
+ #display{
+    text-align: right;
+    height: 70px;
+    /* 2 text display ho rhe h to unke beech mai 70 px .....gap between 2 text*/
+    line-height: 20px;
+    /* vertical 16px and horizontal 8px */
+    padding: 16px 8px;
+    font-size: 20px;
+    background-color: whitesmoke;
+ }
+
+ .buttons{
+    display: grid;
+    border-bottom: 2px solid #999;
+    border-left: 2px solid #999;
+    border-top: 6px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    
+ }
+
+ /* target all those div elements whose parent is div */
+ .buttons > div{
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    background-color:lavenderblush;
+ }
+
+/* browser content ka kaam h display krna */
+/* to browser decides I will display contents like this */
+
+.button{
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#equal{
+    background-color: red;
+    color: black;
+}
+
+.button:hover{
+    background-color: palevioletred;
+    color: white;
+}
+
+#equal:hover{
+    background-color:darkred;
+    color:white;
+}
